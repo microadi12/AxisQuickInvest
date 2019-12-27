@@ -1,0 +1,619 @@
+ul {
+    list-style: none;
+}
+
+ul li p::before {
+    content: "\2022";
+    color: rgb(234, 33, 103) !important;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 29px;
+    position: relative;
+    top: 1.5px;
+}
+
+ul li {
+    color: #5a5a5ac9;
+}
+
+ul li p {
+    word-spacing: 0.5px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Montserrat-regular';
+    text-align: justify;
+    line-height: 27px;
+    color: #6b6b6bc7;
+    font-stretch: normal;
+    margin-bottom: 11px;
+}
+/* Modal css */
+
+.modal-backdrop {
+    z-index: 1000 !important;
+}
+/* Steps center */
+.steps-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Register Otm page css */
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.overview {
+    font-size: 20px;
+    font-family: 'montserrat-regular';
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+.overview-para {
+    font-family: 'montserrat-regular';
+    font-size: 14px;
+    text-align: justify;
+    word-spacing: 4px;
+    line-height: 24px;
+    color: #525252c9;
+    font-weight: 600;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.otm-benefit {
+    font-size: 18px;
+    font-family: 'montserrat-regular';
+}
+
+.bd-left {
+    border-left: 1px solid #ed1965;
+}
+
+.otm-title {
+    color: #ed1965;
+    margin-top: 0px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+}
+
+.w-150 {
+    width: 150px;
+}
+
+.stepperField {
+    font-size: 20px;
+    height: 35px;
+    margin-bottom: 1.8rem;
+    border-bottom-color: #d0d0d0 !important;
+}
+
+.confirm-modal-row {
+    margin-bottom: 15px;
+}
+
+.otm-success-modal {
+    background-color: #53d581;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.otm-icon-tick {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.btn-outborder {
+    background-color: #fff !important;
+    border-color: #ed1965 !important;
+    color: #ed1965 !important;
+}
+
+.final-h {
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.form-group.form-group-md .bootstrap-select .dropdown-toggle .filter-option {
+    font-size: 24px;
+    line-height: 25px;
+    border-bottom-color: #d0d0d0 !important;
+    font-family: 'montserrat-light';
+    color: #ccc;
+}
+
+.form-group .bootstrap-select .dropdown-toggle {
+    border-bottom-color: #d0d0d0 !important;
+}
+
+.search-placeholder {
+    border: 2px solid #e2e0e0 !important;
+    border-radius: 4px !important;
+    padding-left: 30px !important;
+}
+
+.search-icon {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+/* scroll-bar */
+
+/* pyment sip method copy */
+
+.py-color {
+    color: #33333380 !important;
+}
+
+.payment-status-ad {
+    margin-top: 40px;
+    padding: 0px 30px 0px 20px !important;
+}
+.payment-install{
+    font-size: 13px !important;
+}
+.Payment-amount {
+    font-size:24px !important;
+}
+
+.status-name {
+    font-size: 21px !important;
+    line-height: 70px !important;
+    font-weight: 600;
+    word-spacing: 1px;
+}
+
+.justify-right {
+    justify-content: right !important;
+}
+
+.tab-padd {
+    font-size: 18px !important;
+    padding: 12px 55px !important;
+}
+
+.tab-pane-title {
+    font-size: 21px;
+    font-family: 'montserrat-regular';
+    font-weight: bold;
+}
+
+.align-item {
+    margin-top: 10px;
+    text-align: end;
+}
+
+.new_otm {
+    text-align: right;
+    color: #ed1965;
+    font-family: inherit;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.select_Input {
+    position: absolute;
+    border-radius: 3px !important;
+    margin-left: 14px !important;
+    font-size: 14px;
+    font-family: 'montserrat-regular';
+    display: inline;
+    border: 1px solid #999999 !important;
+    height: 27px !important;
+}
+
+.bg-color {
+    background-color: #a9a9a92b;
+    border-radius: 25px;
+}
+
+.card-theme-design {
+    padding: 25px;
+    background-color: #ee85ad1a;
+    margin-bottom: 25px
+}
+
+.card-theme-design p {
+    margin: 0px;
+    color: #373737;
+    font-family: montserrat-regular;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+
+.card-theme-design label {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 15px;
+    font-family: 'montserrat-regular';
+    color: #707070;
+}
+
+.term {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 15px;
+    font-family: 'montserrat-regular';
+    color: #707070;
+}
+
+.policy {
+    padding-left: 0px;
+    font-weight: 600;
+}
+
+.policy p {
+    color: #000000c4;
+}
+
+.payments-sip-modal {
+    z-index: 1061;
+    position: relative;
+    top: -450px;
+}
+
+.modal-w {
+    width: 500px;
+}
+
+.modal-body .img {
+    display: block;
+    width: 22%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px
+}
+
+.modal-body .heading {
+    font-family: 'montserrat-semibold';
+    text-transform: uppercase;
+    word-spacing: 2px;
+    font-size: 22px;
+}
+
+.modal-body .h5 {
+    font-weight: 600;
+    font-size: 14px
+}
+
+.modal-body .parag {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 36px;
+    color: #494949;
+    font-family: 'montserrat-regular';
+    font-weight: 600;
+    word-spacing: 1px;
+}
+
+.modal-icon-close {
+    opacity: 1;
+    font-size: 3rem;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #ed1965;
+}
+
+.modal-padd {
+    padding: 60px 55px;
+}
+
+.slider>.slick-dots>li.slick-active>button:before {
+    color: #ed1965 !important;
+    opacity: 1 !important;
+}
+
+.slider>.slick-dots>li>button:before {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    content: "•" !important;
+    width: 20px !important;
+    height: 20px !important;
+    line-height: 0px !important;
+    text-align: center !important;
+    color: black !important;
+    opacity: 0.2 !important;
+    font-size: 70px !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.active-color {
+    background-color: #ed1965;
+}
+
+/* otm_page css */
+
+.table-head {
+    padding: 16px 15px !important;
+    font-size: 16px !important;
+}
+
+.table-td {
+    padding: 40px 10px !important;
+}
+
+.table-data {
+    padding: 40px 10px;
+    font-size: 18px;
+    color: #464646e8 !important;
+}
+
+.w-100 {
+    width: 100%
+}
+
+.otm-row {
+    display: flex;
+    margin-bottom: 25px
+}
+
+.otm-title {
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+
+.otm-title h1 {
+    margin: 0;
+    align-self: center;
+    color: #ed1965;
+    font-weight: 600;
+}
+
+.new-add {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+.new-add a {
+    align-self: center;
+    color: #ed1965;
+    cursor: pointer;
+}
+
+.m-tb {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+
+}
+.radio-selection {
+    font-family: 'montserrat-semibold';
+    font-size: 18px !important;
+}
+
+/* media queries for Register Otm */
+@media only screen and (max-width: 1200px) {
+    .font-size {
+        font-size: 17px !important;
+    }
+
+    .page-title {
+        font-family: 'montserrat-regular';
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .mr-50 {
+        margin-right: 0px !important;
+        margin-bottom: 50px;
+    }
+    /* Otm_page responsive */
+    .radio-selection {
+        padding-right: 8px;
+    }
+
+    .otm-title-sm {
+        top: 40px;
+        padding: 12px;
+    }
+    .new-add-sm {
+        top: 36px;
+        padding: 12px;
+    }
+    /* payment-sip-method-copy */
+    .payment-status-ad {
+        margin-top: 60px;
+        padding: 0px 30px 0px 20px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mr-50 {
+        margin-right: 0px !important;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .ml-50 {
+        margin-left: 0px !important;
+    }
+
+    .font-size {
+        font-size: 14px !important;
+    }
+
+    /* otm_page responive */
+    .otm-title {
+        top: 33px;
+        padding: 14px;
+    }
+
+    .new-add {
+        top: 40px;
+        padding: 15px;
+
+    }
+    /* payment-sip-method-copy */
+    .payment-status-ad {
+        margin-top: 60px;
+        padding: 0px 30px 0px 20px !important;
+    }
+
+    .card-theme-design label {
+        font-size: 13px;
+    }
+    .py-color {
+        color: #33333380 !important;
+        font-size: 13px !important;
+    }
+
+    .payment-status-ad {
+        margin-top: 40px;
+        padding: 0px 30px 0px 20px !important;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    .ml-50 {
+        margin-left: 0px !important;
+    }
+    .mr-50 {
+        margin-right: 0px !important;
+    }
+
+    .font-size {
+        font-size: 13px !important;
+    }
+    .overview {
+        font-size: 17px;
+    }
+    /* otm-page */
+    .m-tb {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    .otm-title{
+        top:16px;
+    }
+    .new-add {
+        top: 20px;
+    }
+    .new-add a {
+        font-size: 13px;
+    }
+    .otm-title h1 {
+        font-size: 24px;
+    }
+    .radio-selection {
+        font-size: 14px !important;
+    }
+    .table-head {
+        padding: 9px 15px !important;
+        font-size: 13px !important;
+    }
+    .table-td {
+        padding: 0px !important;
+        font-size: 14px !important;
+    }
+    .table-data {
+        font-size: 14px !important;
+        color: #464646e8 !important;
+    }
+    /* payment-sip-method-copy */
+    .item-pad {
+        padding: 13px 0px;
+    }
+    .status-name {
+        font-size: 15px !important;
+        line-height: 30px !important
+    }
+    .payment-status-ad {
+        margin-top: 40px;
+        padding: 0px 30px 0px 20px !important;
+    }
+    .tab-padd {
+        font-size: 15px !important;
+        padding: 12px 0px !important;
+    }
+  
+}
+
+@media only screen and (max-width: 380px) {
+    .font-size {
+        font-size: 13px !important;
+    }
+    .modal-padd {
+        padding: 30px 20px;
+    }
+    .font-size {
+        font-size: 13px !important;
+    }
+    .card-theme-design label {
+        font-size: 12px;
+    }
+    ul li p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .tab-padd {
+        font-size: 15px !important;
+        padding: 12px 0px !important;
+    }
+    .overflow-xs{
+        overflow-x: scroll;
+    }
+    .new-add a {
+        font-size: 11px;
+    }
+ 
+}
+
+@media only screen and (max-width: 320px) {
+
+    /* Payment sip  */
+    .status-name {
+        font-size: 13px !important;
+        line-height: 30px !important
+    }
+    .payment-install{
+        font-size: 10.5px !important;
+    }
+    .Payment-amount {
+        font-size:22px !important;
+    }
+    .font-size {
+        font-size: 13px !important;
+    }
+    .tab-padd {
+        font-size: 15px !important;
+        padding: 12px 0px !important;
+    }
+
+    /* otm-page  */
+
+ 
+}
