@@ -26137,7 +26137,9 @@ footer .panel-group.footer_accordian .footer_acc_list_link li a {
     width: 250px;
   }
   footer.footer .footer_links {
-    width: 380px;
+    /* Value changed from 380 to 355 */
+
+    width: 355px;
   }
 }
 .pre-log-wrapper .sidebar {
