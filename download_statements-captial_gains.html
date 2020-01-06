@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Axis MF</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+</head>
+
+<body>
+    <div class="post-log-wrapper">
+
+        <!-- Sidebar Holder -->
+        <nav class="sidebar">
+            <div class="sidebar-wrapper">
+                <button type="button" class="btn-sitebar-close icon-cancel visible-xs-block"></button>
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse" class="btn-sidebar icon-hamburgermenu"></button>
+                    <a class="sidebar-brand" href="#">
+                        <img src="images/logo-white.png" />
+                    </a>
+                </div>
+                <ul class="list-unstyled nav-main">
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="icon-dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <i class="icon-portfolio"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#transactSubmenu" class="nav-subnav">
+                            <i class="icon-transact"></i>
+                            <span>Transact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="systematic_plans.html">
+                            <i class="icon-systematic_plans"></i>
+                            <span>Systematic Plans</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my_transactions.html">
+                            <i class="icon-my_transactions"></i>
+                            <span>My Transactions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#downloadStatementsSubmenu" class="nav-subnav">
+                            <i class="icon-download"></i>
+                            <span>Download Statements</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled nav-bottom">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="glyphicon glyphicon-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="expanded-menus">
+                <div class="subnav">
+                    <div class="btn-sitebar-back">
+                        <button type="button" class="btn icon-arrow_next"></button>
+                    </div>
+                    <div class="subnav-list-item" id="transactSubmenu">
+                        <h2>Transact</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="transact-invest.html">
+                                    <i class="icon-invest"></i>
+                                    <span>Invest</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transact-redeem.html">
+                                    <i class="icon-redeem"></i>
+                                    <span>Redeem</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transact-switch.html">
+                                    <i class="icon-switch"></i>
+                                    <span>Switch</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transact-add_funds.html">
+                                    <i class="icon-sip_topup"></i>
+                                    <span>Add Funds</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transact-insta_redeem.html">
+                                    <i class="icon-insta_redeem"></i>
+                                    <span>Insta Redeem</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subnav-list-item" id="downloadStatementsSubmenu">
+                        <h2>Download Statements</h2>
+                        <ul class="list-unstyled ">
+                            <li>
+                                <a href="download_statements-account_statement.html">
+                                    <i class="icon-account_statement"></i>
+                                    <span>Account
+                                        <br> Statement
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="download_statements-captial_gains.html">
+                                    <i class="icon-capital_gains"></i>
+                                    <span>Captial Gains</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="download_statements-stt_letter.html">
+                                    <i class="icon-stt_letter"></i>
+                                    <span>STT Letter</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div class="main-content">
+            <div class="sticky-item-top">
+                <div class="sticky-content">
+                    <div class="btn-active">My Folios</div>
+                    <div id="totalInvestments" class="collapse ">
+                        <div class="scrollbar-theme">
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <a href="javascript:void(0)">Total Investments</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Education Folio
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Travel Folio
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Retirement Folio
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Neha’s Folio 1
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">neha’s Folio 2
+                                        <i class="icon-link"></i>
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">neha’s Folio 3
+                                        <i class="icon-link"></i>
+                                        <span class="account">312837137193</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="btn-collapsible collapsed icon-arrow_down" data-toggle="collapse" href="#totalInvestments"></a>
+                </div>
+            </div>
+            <!--/.sticky-item-top-->
+
+            <nav class="navbar navbar-theme">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed btn-navbar icon-hamburgermenu"></button>
+                    <a class="navbar-brand visible-xs-block" href="#">
+                        <img src="images/logo.png" />
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown user-dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle user-info hidden-xs" data-toggle="dropdown">
+                                <span class="username">Hello Neha!</span>
+                                <i class="icon-arrow_down"></i>
+                            </a>
+                            <span class="user-log-details hidden-xs">Last Login:
+                                <strong>3rd Oct 2017 03::30 PM</strong>
+                            </span>
+
+
+                            <a href="javascript:void(0)" class="dropdown-toggle visible-xs-inline-block" data-toggle="dropdown">
+                                <i class="icon-profile"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="visible-xs-block user-info">
+                                    <span class="username">Hello Neha!</span>
+                                    <br>
+                                    <span class="user-log-details text-center-xs">Last Login:
+                                        <strong>3rd Oct 2017 03::30 PM</strong>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="my_profile.html">
+                                        <i class="icon-my_profile"></i>
+                                        <span>My Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="change_password.html">
+                                        <i class="icon-change_password"></i>
+                                        <span>Change Password</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact_us.html">
+                                        <i class="icon-contact_us"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sign_out.html">
+                                        <i class="icon-sign_out"></i>
+                                        <span>Sign Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="add-cart hidden">
+                            <a href="javascript:void(0)">
+                                <i class="icon-cart">
+                                    <span class="badge online"></span>
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--/.navbar-theme-->
+
+            <div class="container">
+                <div class="download-statements">
+                    <div class="row post-page-header">
+                        <div class="col-sm-12 col-xs-12">
+                            <span class="page-title ">Account Statement</span>
+                        </div>
+                    </div>
+                    <div class="row statement-filters">
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="radio radio-green radio-inline">
+                                <input type="radio" id="inlineRadio1" value="radioBtnFolio" name="radioInline" checked>
+                                <label for="inlineRadio1"> For a folio </label>
+                            </div>
+                            <div class="radio radio-green radio-inline">
+                                <input type="radio" id="inlineRadio2" value="radioBtnPan" name="radioInline">
+                                <label for="inlineRadio2"> For a PAN </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./post-page-header-->
+
+                    <div class="pick_folio">
+                        <div class="row row-flex folio-list">
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="btn-group dropdown-theme-3 dropdown-scrollable">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="dropdown-title">
+                                            <span class="heading">Education Folio Education Folio</span>
+                                            <span class="badge">03</span>
+                                            <div class="clearfix"></div>
+                                            <span class="dropdown-subtitle">#756393</span>
+                                        </div>
+                                    </button>
+                                    <div class="dropdown-menu non-collapsible">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox1a" class="styled" type="checkbox">
+                                                    <label for="checkbox1a">Axis Liquid Fund</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox2a" class="styled" type="checkbox">
+                                                    <label for="checkbox2a"> Axis Long Term Equity… </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox3a" class="styled" type="checkbox">
+                                                    <label for="checkbox3a"> Dynamic Equity Fund </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox4a" class="styled" type="checkbox">
+                                                    <label for="checkbox4a">Axis Liquid Fund</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox5a" class="styled" type="checkbox">
+                                                    <label for="checkbox5a"> Axis Long Term Equity… </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox6a" class="styled" type="checkbox">
+                                                    <label for="checkbox6a"> Dynamic Equity Fund </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="btn-group dropdown-theme-3 dropdown-scrollable">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="dropdown-title">
+                                            <span class="heading">Education Folio</span>
+                                            <span class="badge">03</span>
+                                            <div class="clearfix"></div>
+                                            <span class="dropdown-subtitle">#756393</span>
+                                        </div>
+                                        <div class="dropdown-selected-item scrollbar-theme-gray hidden">
+                                            <ul>
+                                                <li>
+                                                    <span class="title">Axis Liquid Fund</span>
+                                                    <span class="subtitle">Growth - Growth</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">Axis Long Term Equity</span>
+                                                    <span class="subtitle">Growth - Growth</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">Dynamic Equity Fund</span>
+                                                    <span class="subtitle">Growth - Growth</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">Axis Liquid Fund</span>
+                                                    <span class="subtitle">Growth - Growth</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">Axis Long Term Equity</span>
+                                                    <span class="subtitle">Growth - Growth</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </button>
+                                    <div class="dropdown-menu non-collapsible">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox1a" class="styled" type="checkbox">
+                                                    <label for="checkbox1a">Axis Liquid Fund</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox2a" class="styled" type="checkbox">
+                                                    <label for="checkbox2a"> Axis Long Term Equity… </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox3a" class="styled" type="checkbox">
+                                                    <label for="checkbox3a"> Dynamic Equity Fund </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox4a" class="styled" type="checkbox">
+                                                    <label for="checkbox4a">Axis Liquid Fund</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox5a" class="styled" type="checkbox">
+                                                    <label for="checkbox5a"> Axis Long Term Equity… </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox6a" class="styled" type="checkbox">
+                                                    <label for="checkbox6a"> Dynamic Equity Fund </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="btn-group dropdown-theme-3 dropdown-scrollable">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="dropdown-title">
+                                            <span class="heading">Education Folio</span>
+                                            <span class="badge">03</span>
+                                            <div class="clearfix"></div>
+                                            <span class="dropdown-subtitle">#756393</span>
+                                        </div>
+                                    </button>
+                                    <div class="dropdown-menu non-collapsible">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox1a" class="styled" type="checkbox">
+                                                    <label for="checkbox1a">Axis Liquid Fund</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox2a" class="styled" type="checkbox">
+                                                    <label for="checkbox2a"> Axis Long Term Equity… </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox3a" class="styled" type="checkbox">
+                                                    <label for="checkbox3a"> Dynamic Equity Fund </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox4a" class="styled" type="checkbox">
+                                                    <label for="checkbox4a">Axis Liquid Fund</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox5a" class="styled" type="checkbox">
+                                                    <label for="checkbox5a"> Axis Long Term Equity… </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox6a" class="styled" type="checkbox">
+                                                    <label for="checkbox6a"> Dynamic Equity Fund </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="btn-group dropdown-theme-3 dropdown-scrollable">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="dropdown-title">
+                                            <span class="heading">Education Folio</span>
+                                            <span class="badge">03</span>
+                                            <div class="clearfix"></div>
+                                            <span class="dropdown-subtitle">#756393</span>
+                                        </div>
+                                    </button>
+                                    <div class="dropdown-menu non-collapsible">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox1a" class="styled" type="checkbox">
+                                                    <label for="checkbox1a">Axis Liquid Fund</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox2a" class="styled" type="checkbox">
+                                                    <label for="checkbox2a"> Axis Long Term Equity… </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox3a" class="styled" type="checkbox">
+                                                    <label for="checkbox3a"> Dynamic Equity Fund </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox4a" class="styled" type="checkbox">
+                                                    <label for="checkbox4a">Axis Liquid Fund</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox5a" class="styled" type="checkbox">
+                                                    <label for="checkbox5a"> Axis Long Term Equity… </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox checkbox-success">
+                                                    <input id="checkbox6a" class="styled" type="checkbox">
+                                                    <label for="checkbox6a"> Dynamic Equity Fund </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="btn-group btn-group-theme-1 pan-list" style="display:none;">
+                            <a href="javascript:void(0)" class="btn btn-outline active vertical-center ">
+                                <span class="text-semibold">ANRPM2345J</span>
+                            </a>
+                            <a href="javascript:void(0)" class="btn btn-outline vertical-center">
+                                <span class="text-semibold">ANRPM235J</span>
+                            </a>
+                            <a href="javascript:void(0)" class="btn btn-outline vertical-center">
+                                <span class="text-semibold">ANRPM235J</span>
+                            </a>
+                            <a href="javascript:void(0)" class="btn btn-outline vertical-center">
+                                <span class="text-semibold">ANRPM235J</span>
+                            </a>
+                        </div>
+                        <div class="pick_timeframe">
+                            <h4>Pick a Timeframe</h4>
+                            <div class="btn-group btn-group-theme-1 btn-group-flex ">
+                                <a href="javascript:void(0)" class="btn btn-outline active vertical-center">
+                                    <span class="text-semibold">Date Range</span>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-outline">
+                                    <span class="text-semibold">Since Inception</span>
+                                    <br>
+                                    <small>Email Only</small>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-outline ">
+                                    <span class="text-semibold">Current Financial Year</span>
+                                    <br>
+                                    <small>Email Only</small>
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-outline ">
+                                    <span class="text-semibold">Previous Financial Year</span>
+                                    <br>
+                                    <small>Email Only</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix height-30"></div>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-9 text-center center-block-xs">
+                                <div class="form-inline">
+                                    <div class="form-group" style="max-width: 190px;">
+                                        <label for="">From</label>
+                                        <div class="input-group date border-bottom-none ">
+                                            <input type="text" class="form-control input-md input-md-xs " value="29 Sep 2018" placeholder="DD MMM YYYY">
+                                            <span class="input-group-addon addon-md addon-md-xs">
+                                                <i class="icon-calendar color-base"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="max-width: 190px;">
+                                        <label for="">To</label>
+                                        <div class="input-group date border-bottom-none ">
+                                            <input type="text" class="form-control input-md input-md-xs" value="" placeholder="DD MMM YYYY" >
+                                            <span class="input-group-addon addon-md addon-md-xs">
+                                                <i class="icon-calendar color-base"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix height-30"></div>
+                        <div class="text-center-xs">
+                            <a href="javascript:void(0)" class="btn btn-lg btn-style btn-filled">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.container-->
+
+        </div>
+        <div class="overlay-light"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript">
+
+        /* $(".dropdown-theme-3 .dropdown-menu input").change(function() {
+             if(this.checked) {
+                 $('.dropdown-selected-item').removeClass('hidden');
+             } else {
+                 $('.dropdown-selected-item').addClass('hidden');
+             }
+             
+         });*/
+
+
+
+
+
+        $(function () {
+            $("input[name='radioInline']").on('change', function () {
+                if ($("input[name='radioInline']:checked").val().toLowerCase() == "radiobtnfolio") {
+                    $('.folio-list').show();
+                    $('.pan-list').hide();
+                }
+                else {
+                    $('.folio-list').hide();
+                    $('.pan-list').show();
+                }
+            })
+
+        });
+    </script>
+</body>
+
+</html>
