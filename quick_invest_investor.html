@@ -17,25 +17,43 @@
         .padding-card {
             padding: 30px 60px !important;
         }
+
         .card-border-radius {
             background-color: #fbf4f6;
             padding: 10px 25px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
+
+        .modalClose {
+            margin-top: -50px;
+            font-size: 28px;
+            color: #ed1975;
+            opacity: 1;
+        }
+
         @media only screen and (max-width: 425px) {
             .padding-card {
                 padding: 20px 25px !important;
             }
         }
+
         @media only screen and (max-width: 375px) {
             .text-xs {
                 font-size: 13px !important;
             }
         }
+        .mb{
+            margin-bottom: 1.1rem; 
+        }
+        .resend{
+            float: right;
+            margin-top: -20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
     </style>
 </head>
-
 <body>
     <div class="pre-log-wrapper" id="mainwrapper">
 
@@ -420,7 +438,7 @@
                             <div class="card-body padding-card">
                                 <div class="row text-sm text-xs">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <p class="text-left ">Request by</p>
+                                        <p class="text-left text-light">Request by</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <p class="text-semibold text-right">Sachin Sharma</p>
@@ -429,7 +447,7 @@
                                 <hr class=" border-top-base">
                                 <div class="row text-sm text-xs">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <p class="text-left ">Folio Number</p>
+                                        <p class="text-left text-light">Folio Number</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <p class="text-right text-semibold">890345678</p>
@@ -438,7 +456,7 @@
                                 <hr class=" border-top-base">
                                 <div class="row text-xs text-sm">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <p class="text-left">Transaction Type</p>
+                                        <p class="text-left text-light">Transaction Type</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <p class="text-semibold text-right">Lumpsum</p>
@@ -447,7 +465,7 @@
                                 <hr class=" border-top-base">
                                 <div class="row text-sm text-xs">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <p class="text-left">Scheme</p>
+                                        <p class="text-left text-light">Scheme</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6 text-right">
                                         <p class="text-right text-semibold">Axis Banking & PSU Debt Fund</p>
@@ -457,7 +475,7 @@
                                 <hr class=" border-top-base">
                                 <div class="row text-sm text-xs">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <p class="text-left">Plan Type</p>
+                                        <p class="text-left text-light">Plan Type</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <p class="text-right text-semibold">Growth</p>
@@ -466,7 +484,7 @@
                                 <hr class=" border-top-base">
                                 <div class="row text-sm text-xs">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <p class="text-left">Amount</p>
+                                        <p class="text-left text-light">Amount</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <p class="text-right text-semibold">&#8377; 75,000</p>
@@ -475,7 +493,7 @@
                                 <hr class=" border-top-base">
                                 <div class="row text-sm text-xs">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <p class="text-left">Registered Bank</p>
+                                        <p class="text-left text-light">Registered Bank</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <p class="text-right text-semibold">Axis Bank</p>
@@ -484,7 +502,7 @@
                                 <hr class=" border-top-base">
                                 <div class="row text-sm text-xs">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <p class="text-left">Account Number</p>
+                                        <p class="text-left text-light">Account Number</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <p class="text-right text-semibold">568097987575875</p>
@@ -513,7 +531,7 @@
                                 </div>
 
                             </div>
-                       
+
 
                         </div>
                     </div>
@@ -526,233 +544,227 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <footer class="footer" style="margin-top:40px;">
+        <div class="container">
+            <div class="row  row-flex row-lg">
+                <div class="col-sm-3 col-xs-12 footer_nav">
+                    <div class="footer-links row">
+                        <ul class="list-unstyled col-auto">
+                            <li><a href="https://www.axismf.com/about-us">About Us</a></li>
+                            <li><a href="https://www.axisbank.com/" rel="nofollow" target="_blank">Axis Bank</a>
+                            </li>
+                            <li><a href="http://www.schroders.com/" rel="nofollow" target="_blank">Schroders</a>
+                            </li>
+                            <li><a href="https://www.axismf.com/careers">Careers</a></li>
 
-            <footer class="footer" style="margin-top:40px;">
-                <div class="container">
-                    <div class="row  row-flex row-lg">
-                        <div class="col-sm-3 col-xs-12 footer_nav">
-                            <div class="footer-links row">
-                                <ul class="list-unstyled col-auto">
-                                    <li><a href="https://www.axismf.com/about-us">About Us</a></li>
-                                    <li><a href="https://www.axisbank.com/" rel="nofollow" target="_blank">Axis Bank</a>
-                                    </li>
-                                    <li><a href="http://www.schroders.com/" rel="nofollow" target="_blank">Schroders</a>
-                                    </li>
-                                    <li><a href="https://www.axismf.com/careers">Careers</a></li>
+                        </ul>
+                        <ul class="list-unstyled col-auto">
+                            <li><a href="https://www.axismf.com/statutory-disclosures">Statutory Disclosures</a>
+                            </li>
+                            <li><a href="https://www.axismf.com/statutory-disclosures#voting_policy">Voting
+                                    Policy
+                                    and Disclosures</a></li>
+                            <li><a href="https://www.axismf.com/about-us#financials">Scheme Annual Report</a>
+                            </li>
+                            <li><a href="https://www.axismf.com/total-expense-ratio" target="_blank"><b>Total
+                                        Expense Ratio for <br>Mutual Funds</b></a></li>
+                            <li><a href="https://www.axismf.com/latest-nav-and-dividend-history"><b>Latest NAV
+                                        &amp;
+                                        Dividend</b></a></li>
 
-                                </ul>
-                                <ul class="list-unstyled col-auto">
-                                    <li><a href="https://www.axismf.com/statutory-disclosures">Statutory Disclosures</a>
-                                    </li>
-                                    <li><a href="https://www.axismf.com/statutory-disclosures#voting_policy">Voting
-                                            Policy
-                                            and Disclosures</a></li>
-                                    <li><a href="https://www.axismf.com/about-us#financials">Scheme Annual Report</a>
-                                    </li>
-                                    <li><a href="https://www.axismf.com/total-expense-ratio" target="_blank"><b>Total
-                                                Expense Ratio for <br>Mutual Funds</b></a></li>
-                                    <li><a href="https://www.axismf.com/latest-nav-and-dividend-history"><b>Latest NAV
-                                                &amp;
-                                                Dividend</b></a></li>
-
-                                </ul>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-12 footer_social_link">
-                            <div class="social-icons text-center">
-                                <h4>Follow Us</h4>
-                                <a href="https://www.facebook.com/axismutualfund" rel="nofollow" target="_blank"
-                                    class="fa fa-facebook"></a>
-                                <a href="https://www.twitter.com/axismutualfund" target="_blank"
-                                    class="fa fa-twitter"></a>
-                                <a href="https://www.linkedin.com/company/axis-mutual-fund/" rel="nofollow"
-                                    target="_blank" class="fa fa-linkedin"></a>
-                                <a href="https://www.youtube.com/axismutualfund" rel="nofollow" target="_blank"
-                                    class="fa fa-youtube-play"></a>
-                                <div class="clearfix height-10"></div>
-                                <a href="https://play.google.com/store/apps/details?id=com.axis.easyinvest&amp;hl=en"
-                                    rel="nofollow" class="gp_icon">
-                                    <i class="icon-google-play"></i>
-                                    <small>Google Play</small>
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-12 footer_mutual_fund">
-                            <div class="panel-group footer_accordian text-center" id="footer_accordian">
-                                <div class="panel">
-                                    <div class="panel-heading collapsed" data-toggle="collapse"
-                                        data-target="#footer_acc_item1">
-                                        <span class="panel-title1">Category wise Mutual Funds</span>
-                                        <a href="javascript:void(0)" class="collapse-icon"></a>
-                                    </div>
-                                    <div id="footer_acc_item1" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="panel-content">
-                                                <ul class="footer_acc_list_link">
-                                                    <li>
-                                                        <a href="https://www.axismf.com/mutual-funds/debt-funds"
-                                                            class="aflink">Debt Funds</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.axismf.com/mutual-funds/equity-funds"
-                                                            class="aflink">Equity Funds</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="https://www.axismf.com/mutual-funds/other-funds"
-                                                            class="aflink"> Other Funds(FoF &amp; ETF)</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.axismf.com/mutual-funds/hybrid-balance-funds"
-                                                            class="aflink">Hybrid Funds</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.axismf.com/mutual-funds/special-situation-funds"
-                                                            class="aflink">Special Situation Funds</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel">
-                                    <div class="panel-heading collapsed" data-toggle="collapse"
-                                        data-target="#footer_acc_item2">
-                                        <span class="panel-title1">Top Mutual Funds</span>
-                                        <a href="javascript:void(0)" class="collapse-icon"></a>
-                                    </div>
-                                    <div id="footer_acc_item2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="panel-content">
-                                                <ul class="footer_acc_list_link">
-                                                    <li>
-                                                        <a
-                                                            href="https://www.axismf.com/mutual-funds/equity-funds/axis-long-term-equity-fund/ts-gp/regular">Axis
-                                                            Long Term Equity Fund</a>
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="https://www.axismf.com/mutual-funds/equity-funds/axis-dynamic-equity-fund/de-gp/regular">Axis
-                                                            Dynamic Equity Fund</a>
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="https://www.axismf.com/mutual-funds/equity-funds/axis-focused-25-fund/af-gp/regular">Axis
-                                                            Focused 25 Fund</a>
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="https://www.axismf.com/mutual-funds/equity-funds/axis-bluechip-fund/ef-gp/regular">Axis
-                                                            Bluechip Fund</a>
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="https://www.axismf.com/mutual-funds/special-situation-funds/axis-childrens-gift-fund/cg-gl/regular">Axis
-                                                            Children's Gift Fund</a>
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="https://www.axismf.com/mutual-funds/debt-funds/axis-strategic-bond-fund/if-gp/regular">Axis
-                                                            Strategic Bond Fund</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-12 footer_links">
-                            <div class="footer-links-2 text-center-xs">
-                                <ul class="list-unstyled list-inline">
-                                    <li><a href="https://www.axismf.com/term-of-use/privacy-policy">Privacy</a></li>
-
-
-
-                                </ul>
-                                <div class="clearfix"></div>
-                                <ul class="list-unstyled list-inline">
-                                    <li><a href="https://www.axismf.com/term-of-use/terms">Terms of Use</a></li>
-                                    <li><a href="https://www.axismf.com/disclaimer/Index">Disclaimer</a></li>
-                                    <li><a href="https://www.axismf.com/sitemap">Sitemap</a></li>
-                                </ul>
-                                <div class="clearfix height-20"></div>
-
-                                <p>Please use this web page in Chrome Ver. 60+, IE Ver. 10+, Mozilla Firefox Ver. 60+
-                                    &amp;
-                                    Safari Ver. 12+ for a better experience, Please note it may not work properly in
-                                    other
-                                    browsers.</p>
-                                <p>Copyright © 2016. All rights reserved Axis Mutual Fund.</p>
-                            </div>
-                        </div>
-
+                        </ul>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-xs-12">
-                            <div class="note text-center">
-                                Mutual fund investments are subject to market risks, read all scheme related documents
-                                carefully.
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </footer>
+                <div class="col-sm-3 col-xs-12 footer_social_link">
+                    <div class="social-icons text-center">
+                        <h4>Follow Us</h4>
+                        <a href="https://www.facebook.com/axismutualfund" rel="nofollow" target="_blank"
+                            class="fa fa-facebook"></a>
+                        <a href="https://www.twitter.com/axismutualfund" target="_blank" class="fa fa-twitter"></a>
+                        <a href="https://www.linkedin.com/company/axis-mutual-fund/" rel="nofollow" target="_blank"
+                            class="fa fa-linkedin"></a>
+                        <a href="https://www.youtube.com/axismutualfund" rel="nofollow" target="_blank"
+                            class="fa fa-youtube-play"></a>
+                        <div class="clearfix height-10"></div>
+                        <a href="https://play.google.com/store/apps/details?id=com.axis.easyinvest&amp;hl=en"
+                            rel="nofollow" class="gp_icon">
+                            <i class="icon-google-play"></i>
+                            <small>Google Play</small>
+                        </a>
 
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 footer_mutual_fund">
+                    <div class="panel-group footer_accordian text-center" id="footer_accordian">
+                        <div class="panel">
+                            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#footer_acc_item1">
+                                <span class="panel-title1">Category wise Mutual Funds</span>
+                                <a href="javascript:void(0)" class="collapse-icon"></a>
+                            </div>
+                            <div id="footer_acc_item1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="panel-content">
+                                        <ul class="footer_acc_list_link">
+                                            <li>
+                                                <a href="https://www.axismf.com/mutual-funds/debt-funds"
+                                                    class="aflink">Debt Funds</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.axismf.com/mutual-funds/equity-funds"
+                                                    class="aflink">Equity Funds</a>
+                                            </li>
 
-            <div class="modal modal-theme fade modal-centered" id="approvedTransactionModal" tabindex="-1" role="dialog"
-                aria-labelledby="QuickInvestDone" aria-hidden="true">
-                <div class="modal-dialog ">
-                    <div class="modal-content ">
-                        <div class="modal-body">
-                            <div class="row text-center" style="margin-bottom: 1.1rem; padding-top: 10px;">
-                                <div class="col-md-12">
-                                    <h3 class="modal-title color-base">
-                                        <b>Confirmation</b>
-                                    </h3>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
-                                        style="margin-top: -50px;font-size: 28px; color: #ed1975;opacity: 1;">&times;</button>
-                                </div>
-                            </div>
-                            <div class="row text-center" style="margin-bottom: 1.1rem;">
-                                <div class="col-md-12">
-                                    <small>We have sent a OTP to your mobile xxxxxx7631 <br>and email
-                                        xxxxxx15@gmail.com</small>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-bottom: 1.1rem;">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-8">
-                                    <form>
-                                        <div class="form-group form-group-md">
-                                            <label class="">OTP</label>
-                                            <input type="text" class="form-control text-light" id="txtName" value=""
-                                                placeholder="4724299">
-                                            <span
-                                                style="float: right;margin-top: -20px;font-size: 13px;font-weight: bold;">Resend</span>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-md-2"></div>
-                            </div>
-                            <div class="row text-center ">
-                                <div class="col-md-12 ">
-                                    <button type="button" class="btn btn-filled btn-lg">Confirm</button>
+                                            <li>
+                                                <a href="https://www.axismf.com/mutual-funds/other-funds"
+                                                    class="aflink"> Other Funds(FoF &amp; ETF)</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.axismf.com/mutual-funds/hybrid-balance-funds"
+                                                    class="aflink">Hybrid Funds</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.axismf.com/mutual-funds/special-situation-funds"
+                                                    class="aflink">Special Situation Funds</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="panel">
+                            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#footer_acc_item2">
+                                <span class="panel-title1">Top Mutual Funds</span>
+                                <a href="javascript:void(0)" class="collapse-icon"></a>
+                            </div>
+                            <div id="footer_acc_item2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="panel-content">
+                                        <ul class="footer_acc_list_link">
+                                            <li>
+                                                <a
+                                                    href="https://www.axismf.com/mutual-funds/equity-funds/axis-long-term-equity-fund/ts-gp/regular">Axis
+                                                    Long Term Equity Fund</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.axismf.com/mutual-funds/equity-funds/axis-dynamic-equity-fund/de-gp/regular">Axis
+                                                    Dynamic Equity Fund</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.axismf.com/mutual-funds/equity-funds/axis-focused-25-fund/af-gp/regular">Axis
+                                                    Focused 25 Fund</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.axismf.com/mutual-funds/equity-funds/axis-bluechip-fund/ef-gp/regular">Axis
+                                                    Bluechip Fund</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.axismf.com/mutual-funds/special-situation-funds/axis-childrens-gift-fund/cg-gl/regular">Axis
+                                                    Children's Gift Fund</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://www.axismf.com/mutual-funds/debt-funds/axis-strategic-bond-fund/if-gp/regular">Axis
+                                                    Strategic Bond Fund</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 footer_links">
+                    <div class="footer-links-2 text-center-xs">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="https://www.axismf.com/term-of-use/privacy-policy">Privacy</a></li>
+
+
+
+                        </ul>
+                        <div class="clearfix"></div>
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="https://www.axismf.com/term-of-use/terms">Terms of Use</a></li>
+                            <li><a href="https://www.axismf.com/disclaimer/Index">Disclaimer</a></li>
+                            <li><a href="https://www.axismf.com/sitemap">Sitemap</a></li>
+                        </ul>
+                        <div class="clearfix height-20"></div>
+
+                        <p>Please use this web page in Chrome Ver. 60+, IE Ver. 10+, Mozilla Firefox Ver. 60+
+                            &amp;
+                            Safari Ver. 12+ for a better experience, Please note it may not work properly in
+                            other
+                            browsers.</p>
+                        <p>Copyright © 2016. All rights reserved Axis Mutual Fund.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <div class="note text-center">
+                        Mutual fund investments are subject to market risks, read all scheme related documents
+                        carefully.
                     </div>
                 </div>
             </div>
 
-            <div class="overlay-light"></div>
-            <script src="js/jquery.js"></script>
-            <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
-            <script src="js/vendor.min.js"></script>
-            <script src="js/common.js"></script>
+        </div>
+    </footer>
+    <div class="modal modal-theme fade modal-centered" id="approvedTransactionModal" tabindex="-1" role="dialog"
+        aria-labelledby="QuickInvestDone" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-body">
+                    <div class="row text-center mb" style="padding-top: 10px;">
+                        <div class="col-md-12">
+                            <h3 class="modal-title color-base">
+                                <b>Confirmation</b>
+                            </h3>
+                            <button type="button" class="close modalClose" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                    </div>
+                    <div class="row text-center mb">
+                        <div class="col-md-12">
+                            <small>We have sent a OTP to your mobile xxxxxx7631 <br>and email
+                                xxxxxx15@gmail.com</small>
+                        </div>
+                    </div>
+                    <div class="row mb">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <form>
+                                <div class="form-group form-group-md">
+                                    <label class="">OTP</label>
+                                    <input type="text" class="form-control text-light" id="txtName" value=""
+                                        placeholder="4724299">
+                                    <span class="resend">Resend</span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row text-center ">
+                        <div class="col-md-12 ">
+                            <button type="button" class="btn btn-filled btn-lg">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-light"></div>
+    <script src="js/jquery.js"></script>
+    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>

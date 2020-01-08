@@ -8,10 +8,8 @@
     <meta name="description" content="">
     <meta name="keyword" content="">
     <meta name="author" content="">
-
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
-
     <title>Axis MF</title>
     <style>
         .card-border-radius {
@@ -20,12 +18,60 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
+        .select-input-span {
+            position: relative;
+            top: 10px
+        }
+        .form-group .bootstrap-select .dropdown-toggle:after {
+            color: #ed1965 !important;
+        }
+        #padding {
+            padding: 20px 30px 20px 30px;
+        }
+        .otm-success-modal {
+            background-color: #53d581;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            margin: 0px auto;
+        }
+        .modal-p {
+            font-size: 13px;
+            font-weight: 600;
+            color: #999999d1;
+            word-spacing: 4px;
+            letter-spacing: 0px;
+            line-height: 22px;
+            margin-bottom: 18px;
+        }
+        .mb-15 {
+            margin-bottom: 15px;
+        }
+        .otm-icon-tick {
+            color: #fff;
+            font-size: 30px;
+            margin-top: 25px;
+        }
+        .modalClose {
+            font-size: 28px;
+            color: #ed1975;
+            opacity: 1
+        }
+        .modalCloseButton {
+            margin-top: -40px;
+            margin-right: -25px;
+        }
+        .mt-2{
+            margin-top: 2px;
+        }
+        .mb-rem{
+            margin-bottom: 1.3rem;
+        }
+        
     </style>
 </head>
 
 <body>
-
-
     <div class="pre-log-wrapper" id="mainwrapper">
 
         <nav class="sidebar">
@@ -384,26 +430,27 @@
                 </div>
             </nav>
 
-            <div class="container main-content">
+            <div class="container" style="margin-top:65px;">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <div class="row ">
-                            <div class="col-md-12 text-semibold" style="margin-bottom: 15px;">
+                            <div class="col-md-12 col-xs-12 text-semibold mb-15">
                                 <h3>Enter the following details to initiate investment</h3>
                             </div>
                         </div>
-                        <div class="card card-theme-3 ">
+                        <div class="card card-theme-3" style="border:1px solid rgba(237, 25, 101, 0.2) !important">
                             <div class="card-border-radius">
                                 <h4 class="text-semibold">Personal Details</h4>
                             </div>
 
-                            <div class="row" style="padding: 20px 30px 20px 30px;">
+                            <div class="row" id="padding">
                                 <div class="col-md-4">
                                     <form>
                                         <div class="form-group">
                                             <label class="">Enter folio number</label>
-                                            <input type="text" class="form-control text-light" placeholder="890345678" value="">
+                                            <input type="text" class="form-control text-light" placeholder="890345678"
+                                                value="">
                                         </div>
                                     </form>
                                 </div>
@@ -415,14 +462,15 @@
                                     <small class="">Customer PAN</small>
                                     <h4 class="text-semibold">ABPVD1234G</h4>
                                 </div>
-                              
+
                             </div>
                             <div class="row" style="padding: 10px 30px 20px 30px;">
                                 <div class="col-md-4">
                                     <form>
                                         <div class="form-group">
                                             <label class="">Requested by</label>
-                                            <input type="text" class="form-control text-light" placeholder="Sachin Sharma">
+                                            <input type="text" class="form-control text-light"
+                                                placeholder="Sachin Sharma">
                                         </div>
                                     </form>
                                 </div>
@@ -430,33 +478,35 @@
                             <div class="card-border-radius">
                                 <h4 class="text-semibold">Investment Details</h4>
                             </div>
-                            <div class="" style="padding: 20px 30px 30px 30px;">
+                            <div id="padding">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h4 class="text-semibold">Type of investment</h4>
-                                        <form>
-                                            <div class="col-xs-12 col-sm-6 col-md-5">
-                                                <div class="radio radio-green radio-inline">
-                                                    <input type="radio" id="inlineRadio1" value="radioBtnSuccess"
-                                                        name="radioInline" checked>
-                                                    <label for="inlineRadio1"
-                                                        class="radio-selection text-semibold text-16">One Time
-                                                        Investment
-                                                        (Lumpsum)</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-5">
-                                                <div class="radio radio-green radio-inline">
-                                                    <input type="radio" id="inlineRadio1" value="radioBtnSuccess"
-                                                        name="radioInline" checked>
-                                                    <label for="inlineRadio1"
-                                                        class="radio-selection text-semibold text-16">Systematic
-                                                        Investment
-                                                        Plans (SIP)</label>
-                                                </div>
-                                            </div>
-                                        </form>
                                     </div>
+                                </div>
+                                <div class="row">
+                                    <form>
+                                        <div class="col-xs-12 col-sm-6 col-md-5">
+                                            <div class="radio radio-green radio-inline">
+                                                <input type="radio" id="inlineRadio1" value="radioBtnSuccess"
+                                                    name="radioInline" >
+                                                <label for="inlineRadio1"
+                                                    class="radio-selection text-14 text-semibold">One Time
+                                                    Investment
+                                                    (Lumpsum)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-5">
+                                            <div class="radio radio-green radio-inline">
+                                                <input type="radio" id="inlineRadio2" value="radioBtnSuccess1"
+                                                    name="radioInline1 " onclick="show()">
+                                                <label for="inlineRadio1"
+                                                    class="radio-selection text-14 text-semibold ">Systematic
+                                                    Investment
+                                                    Plans (SIP)</label>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                                 <hr class="border-top-base">
                                 <div class="row">
@@ -479,7 +529,14 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h4 class="text-semibold">Pick a new scheme</h4>
-
+                                    </div>
+                                    <div class="col-sm-5 col-md-5" style="padding-bottom: 2rem;">
+                                        <i class="icon-search-outline position-absolute"
+                                            style="top: 9px; left: 25px;"></i>
+                                        <input type="search" class="form-control searchbox bs-searchbox"
+                                            placeholder="Search for a fund" style="padding-left: 2.3rem;">
+                                    </div>
+                                    <div class="col-sm-12 col-md-12">
                                         <div class="pick_folio">
                                             <div class="row row-flex folio-list">
                                                 <div class="col-sm-4 col-xs-12">
@@ -555,30 +612,33 @@
                                     <div class="col-md-12">
                                         <h4 class="text-semibold">Select plan & option</h4>
                                         <span class="text-light">Axis Banking & PSU Debt Fund</span>
-                                        <form>
-                                            <div class="col-xs-12 col-sm-4 col-md-2">
-                                                <div class="radio radio-green radio-inline">
-                                                    <input type="radio" id="inlineRadio1" value="radioBtnSuccess"
-                                                        name="radioInline" checked>
-                                                    <label for="inlineRadio1"
-                                                        class="radio-selection text-semibold text-16">Growth</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 col-md-2">
-                                                <div class="radio radio-green radio-inline">
-                                                    <input type="radio" id="inlineRadio1" value="radioBtnSuccess"
-                                                        name="radioInline" checked>
-                                                    <label for="inlineRadio1"
-                                                        class="radio-selection text-16 text-semibold">Dividend</label>
-                                                </div>
-                                            </div>
-                                        </form>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <form>
+                                        <div class="col-xs-12 col-sm-4 col-md-2">
+                                            <div class="radio radio-green radio-inline">
+                                                <input type="radio" id="inlineRadio1" value="radioBtnSuccess"
+                                                    name="radioInline" checked>
+                                                <label for="inlineRadio1"
+                                                    class="radio-selection text-14 text-semibold">Growth</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-2">
+                                            <div class="radio radio-green radio-inline">
+                                                <input type="radio" id="inlineRadio1" value="radioBtnSuccess"
+                                                    name="radioInline">
+                                                <label for="inlineRadio1"
+                                                    class="radio-selection text-14 text-semibold">Dividend</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
                                 <hr class="border-top-base">
-                                <div class="row" style="display: none;">
+                                <div class="row hide ">
                                     <div class="col-sm-4">
-                                        <div class="form-group form-group-md">
+                                        <div class="form-group">
                                             <h4 class="text-semibold">SIP day</h4>
                                             <div class="btn-group bootstrap-select form-control" style="width: 100%;">
                                                 <select class="form-control selectpicker" data-width="100%"
@@ -588,14 +648,15 @@
                                                     <option value="DOB">DOB</option>
                                                 </select>
                                             </div>
-                                            <span class="text-12">First SIP date will be 23 December,2020</span>
+                                            <span class="text-12 select-input-span">First SIP date will be 23
+                                                December,2020</span>
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="form-group form-group-md">
+                                        <div class="form-group ">
                                             <h4 class="text-semibold">Frequeuncy</h4>
                                             <div class="btn-group bootstrap-select form-control" style="width: 100%;">
-                                                <select class="form-control selectpicker" data-width="100%"
+                                                <select class="form-control selectpicker text-16" data-width="100%"
                                                     id="ur-select" data-title="Option" tabindex="-98">
                                                     <option class="bs-title-option" value="">Once a Month</option>
                                                     <option value="EMAIL">Registered Email id</option>
@@ -605,7 +666,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="form-group form-group-md">
+                                        <div class="form-group ">
                                             <h4 class="text-semibold">SIP Until</h4>
                                             <div class="btn-group bootstrap-select form-control" style="width: 100%;">
                                                 <select class="form-control selectpicker" data-width="100%"
@@ -615,15 +676,16 @@
                                                     <option value="DOB">DOB</option>
                                                 </select>
                                             </div>
-                                            <span class="text-12">Installment Will Continue until investor cancel
+                                            <span class="text-12 select-input-span">Installment Will Continue until
+                                                investor cancel
                                                 SIP</span>
 
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="border-top-base" style="display: none;">
+                                <hr class="border-top-base hide " id="radioInline1">
                                 <div class="row ">
-                                    <div class="col-md-12">
+                                    <div class="">
                                         <div class="col-md-4">
                                             <form>
                                                 <h4 class="text-semibold">Enter Amount</h4>
@@ -635,21 +697,28 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="check-section ">
-                                    <div class="form-group ">
-                                        <div class="text-center checkbox checkbox-green " style="float: left;">
-                                            <input type="checkbox" id="" checked name="checkbox">
-                                            <label for="" class="form-label-xs"
-                                                style="font-size: 12px;line-height: 20px; padding-left: 10px;">
-                                                I have read and accept the
-                                                <a href="https://www.axismf.com/TermOfUse/terms" target="_blank">
-                                                    <span class='color-base text-semibold'>Terms &
-                                                        Conditions.</span>
-                                                </a>
-                                            </label>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="check-section ">
+                                            <div class="form-group ">
+                                                <div class="text-center checkbox checkbox-green " style="float: left;">
+                                                    <input type="checkbox" id="" checked name="checkbox">
+                                                    <label for="" class="form-label-xs"
+                                                        style="font-size: 12px;line-height: 20px; padding-left: 10px;">
+                                                        I have read and accept the
+                                                        <a href="https://www.axismf.com/TermOfUse/terms"
+                                                            target="_blank">
+                                                            <span class='color-base text-semibold'>Terms &
+                                                                Conditions.</span>
+                                                        </a>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
+
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group form-btns text-center-xs">
@@ -664,14 +733,15 @@
                             </div>
 
                         </div>
+
                     </div>
+                    <div class="col-md-1"></div>
                 </div>
-                <div class="col-md-1"></div>
+
             </div>
+
         </div>
     </div>
-    </div>
-
 
     <footer class="footer" style="margin-top:40px;">
         <div class="container">
@@ -834,8 +904,6 @@
         </div>
     </footer>
 
-
-
     <div class="modal fade modal-theme modal-centered" id="confirmModal" tabindex="-1" role="dialog"
         aria-labelledby="QuickInvestDone" aria-hidden="true">
         <div class="modal-dialog">
@@ -845,34 +913,50 @@
                         <h3 class="modal-title color-base">
                             Confirmation
                         </h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
-                            style="margin-top: -40px;font-size: 28px;color: #ed1975;opacity: 1;margin-right: -25px;">&times;</button>
+                        <button type="button" class="close modalClose modalCloseButton" data-dismiss="modal"
+                            aria-hidden="true">&times;</button>
                     </div>
                     <div class="row" style="margin-bottom: 2rem;">
                         <div class="col-md-12">
-                            <h3 class="" style="margin-bottom: 2px;" class="text-semibold">Axis Banking & PSU Debt Fund
+                            <h3 class="mb-2 text-semibold">Axis Banking & PSU Debt Fund
                             </h3>
-                            <small class="">Direct-GROWTH</small>
+                            <small>Direct-GROWTH</small>
                         </div>
                     </div>
-                    <div class="row" style="margin-bottom: 1.3rem;">
+                    <div class="row mb-rem">
                         <div class="col-md-5">
                             <small>Education Folio</small>
-                            <h3 style="margin-top: 2px;" class="text-semibold"> #756393 </h3>
+                            <h4  class="mt-2 text-semibold"> #756393 </h4>
                         </div>
                         <div class="col-md-7">
                             <small>NAV As on 24th Dec, 2019</small>
-                            <h3 style="margin-top: 2px;" class="text-semibold">&#8377; 50.24 </h3>
+                            <h4 class="mt-2 text-semibold">&#8377; 50.24 </h4>
                         </div>
                     </div>
-                    <div class="row" style="margin-bottom: 1.3rem;">
+                    <div class="row mb-rem">
                         <div class="col-md-5">
                             <small>Investment amount</small>
-                            <h3 style="margin-top: 2px;" class="text-semibold">&#8377; 75,000</h3>
+                            <h4 class="mt-2 text-semibold">&#8377; 75,000</h4>
                         </div>
                         <div class="col-md-7">
                             <small>Investing</small>
-                            <h3 style="margin-top: 2px;" class="text-semibold">Directly</h3>
+                            <h4 class="mt-2 text-semibold">Directly</h4>
+                        </div>
+                    </div>
+                    <div class="row mb-rem" style= "display: none;">
+                        <div class="col-md-5">
+                            <small>SIP Day</small>
+                            <h4 class="mt-2 text-semibold">8</h4>
+                        </div>
+                        <div class="col-md-7">
+                            <small>SIP Frequency</small>
+                            <h4 class="mt-2 text-semibold">Once a month</h4>
+                        </div>
+                    </div>
+                    <div class="row mb-rem" style="display: none;">
+                        <div class="col-md-5">
+                            <small>SIP Unit</small>
+                            <h4 class="mt-2 text-semibold">Cancelled</h4>
                         </div>
                     </div>
                     <div class="row text-center">
@@ -892,35 +976,25 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" style="border-bottom: 0px;">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
-                        style="font-size: 28px; color: #ed1975;opacity: 1;">&times;</button>
+                    <button type="button" class="close modalClose" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
-
                 <div class="modal-body text-center">
                     <div class="row text-center">
-                        <div class="text-center otm-success-modal" style="background-color: #53d581;
-                        width: 75px;
-                        height: 75px;
-                        border-radius: 50%;
-                        margin: 0px auto;">
+                        <div class="text-center otm-success-modal">
                             <div style="padding-top: 22px;">
-                                <i class="icon-tick otm-icon-tick" style="color: #fff;
-                                font-size: 30px;
-                                margin-top: 25px;"></i>
+                                <i class="icon-tick otm-icon-tick"></i>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12">
-                            <h3 class="color-base text-center" style="margin-bottom: 15px;">Transaction initiated</h3>
-                            <p style="font-size: 18px;
-                            font-family: montserrat-regular; margin-bottom: 18px;
-                            ">Your transaction <b class="text-semibold">#3456785</b>, for lumpsum investment <br>of
+                            <h3 class="color-base text-center mb-15">Transaction initiated</h3>
+                            <p class="text-regular mb-15" style="font-size: 18px;">Your transaction <b
+                                    class="text-semibold">#3456785</b>, for lumpsum investment <br>of
                                 &#8377; <b class="text-semibold">75,000</b> for
                                 <b class="text-semibold">Axis Banking & PSU Debt (Direct-Growth)</b> <br>has been
                                 successfully initiated.</p>
-                            <p
-                                style="font-size: 13px;font-family: montserrat-regular;font-weight: 600;color: #999999d1;word-spacing: 4px;letter-spacing: 0px;line-height: 22px;margin-bottom: 18px;">
+                            <p class="text-regular modal-p">
                                 A link has been sent to the investor via SMS/Email for him to make the payment from him
                                 registered bank. Please ask investor to complete the transaction within 72 hours or the
                                 link will expire</p>
@@ -939,7 +1013,7 @@
     <script src="js/common.js"></script>
 
     <script>
-        $
+      
     </script>
 </body>
 
